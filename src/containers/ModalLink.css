@@ -1,0 +1,23 @@
+.modal {
+position: absolute;
+top: 35vh;
+right: 100px;
+bottom: 0;
+left: 0;
+z-index: 10040;
+overflow: auto;
+overflow-y: auto;
+}
+
+.modal-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copy-btn {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    border-radius: 17px;
+    display: block;
+}

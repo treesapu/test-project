@@ -1,0 +1,20 @@
+.center {
+    padding-top: 30%;
+    text-align: center;
+}
+
+.fakeFormField{
+border: 1px solid #4169E1;
+border-radius: 17px;
+opacity: 1;
+margin-top: 12px;
+margin-bottom: 12px;
+padding-top: 2px;
+padding-bottom: 2px;
+margin-left: 9vw;
+margin-right: 9vw;
+}
+
+.btn-primary {
+    margin-top: 28px;
+}
