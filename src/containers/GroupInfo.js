@@ -27,6 +27,7 @@ export default function GroupInfo({database}) {
             <Popover.Body>
                 This is where you can see your group's expectations,
                 strengths and weaknesses.
+                <br/>
                 <button onClick={handleChange} class="btn btn-primary">Next</button>
             </Popover.Body>
         </Popover>
