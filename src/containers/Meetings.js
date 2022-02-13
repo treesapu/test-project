@@ -1,11 +1,26 @@
 import React from "react";
 import "./Meetings.css";
+import meetingUI from '../meeting-popup.jpg';
+import { OverlayTrigger, Popover } from "react-bootstrap";
 
 export default function Meetings() {
+
+  const ava_popover = (
+    <Popover>
+        <Popover.Body>
+        <img src={meetingUI}/>
+        </Popover.Body>
+    </Popover>
+)
+
   return (
     <div>
       <h1>Meetings</h1>
-      <button type="button" class="btn btn-primary">Select availability</button>
+      
+      <OverlayTrigger trigger="click" overlay={ava_popover} placement= "bottom-end">
+        <button type="button" class="btn btn-primary">Select availability</button>
+      </OverlayTrigger>
+
       <form>
         <div class="row" id="MeetingTableHead">
           <div class="col">
@@ -21,16 +36,11 @@ export default function Meetings() {
 
         <div class= "MeetingTableFormFields">
         <div class="input-group">
-            <input type="date" class="form-control"/>
-            <input type="time" class="form-control"/>
+            <input type="date" class="form-control" value="2022-02-06"/>
+            <input type="time" class="form-control" value="06:00"/>
             <input type="text" class="form-control" value = "You,Meredith"/>
         </div>
 
-        <div class="input-group">
-            <input type="date" class="form-control" />
-            <input type="time" class="form-control" />
-            <input type="text" class="form-control" value = "You, John, Meredith"/>
-        </div>
         </div>
 
       </form>
